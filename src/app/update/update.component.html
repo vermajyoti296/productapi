@@ -1,0 +1,9 @@
+
+<br><br>
+<form [formGroup]="updatedata" (ngSubmit)="update()">
+    <input type="text" placeholder="S.N." formControlName="id"> <br><br>
+    <input type="text" placeholder="Title" formControlName="title"><br><br>
+    <input type="text" placeholder="Price" formControlName="price"><br><br>
+    <input  type="text" placeholder="Rating" formControlName="rating" isDisabled="true"><br><br>
+    <button mat-raised-button type="submit">Update</button>
+</form>

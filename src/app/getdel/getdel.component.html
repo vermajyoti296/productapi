@@ -1,0 +1,25 @@
+
+<div>
+<table>
+   <tr>
+     <th>S.N.</th>
+     <th>Image</th>
+     <th>Title</th>
+     <th>Price</th>
+     <th>Rating</th>
+     <th>Action</th>
+ </tr>
+   <tr *ngFor="let user of users.products">
+     <td>{{user.id}}</td>
+     <td><p *ngFor= "let i of user.images"><img src={{i}} width="20" height="20"></p></td>
+     <td>{{user.title}}</td>
+     <td>{{user.price}}</td>
+     <td>{{user.rating}}</td>
+     <td>
+     <button  mat-raised-button (click)="remove(user.id)">Delete</button>&nbsp;
+     <button mat-raised-button routerLink="/update/{{user.id}}">Update</button></td> 
+     <!-- <td><button (click)="edit(user.id)">Edit</td> -->
+   </tr>
+ </table>
+ </div>
+ 

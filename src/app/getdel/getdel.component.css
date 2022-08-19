@@ -1,0 +1,9 @@
+td{
+    text-align: center;
+}
+table,th,td{
+    border:3px solid;
+}
+div{
+    margin-left: 25%;
+}
